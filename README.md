@@ -60,6 +60,3 @@ chat-app/
 │
 ├── README.md
 └── package.json
-
-
-
