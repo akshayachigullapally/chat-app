@@ -33,19 +33,19 @@ cd chat-app
 
 
 Backend Setup
-```bash
+```
 -cd server
 -npm install
 -node index.js
 
 Frontend Setup
-```bash
+```
 -cd client
 -npm install
 -npm start
 
 Project Structure
-```bash
+```
 chat-app/
 │
 ├── client/            # React frontend
