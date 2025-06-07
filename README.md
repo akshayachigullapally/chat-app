@@ -31,19 +31,21 @@ Clone the repository and install the dependencies for both client and server:
 git clone https://github.com/akshayachigullapally/chat-app.git
 cd chat-app
 
-
+```
 Backend Setup
 ```
 -cd server
 -npm install
 -node index.js
 
+```
 Frontend Setup
 ```
 -cd client
 -npm install
 -npm start
 
+```
 Project Structure
 ```
 chat-app/
