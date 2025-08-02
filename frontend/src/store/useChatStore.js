@@ -64,5 +64,22 @@ export const useChatStore = create((set, get) => ({
     socket.off("newMessage");
   },
 
+  subscribeToOnlineUsers: () => {
+    const socket = useAuthStore.getState().socket;
+    if (!socket) return;
+
+    socket.on("getOnlineUsers", (onlineUserIds) => {
+      // Update online users in auth store
+      useAuthStore.getState().setOnlineUsers(onlineUserIds);
+    });
+  },
+
+  unsubscribeFromOnlineUsers: () => {
+    const socket = useAuthStore.getState().socket;
+    if (socket) {
+      socket.off("getOnlineUsers");
+    }
+  },
+
   setSelectedUser: (selectedUser) => set({ selectedUser }),
 }));
