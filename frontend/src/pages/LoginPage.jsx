@@ -112,6 +112,7 @@ const LoginPage = () => {
       <AuthImagePattern
         title={"Welcome back!"}
         subtitle={"Sign in to continue your conversations and catch up with your messages."}
+        imageSrc="/undraw_mobile-log-in_0n4q.svg"
       />
     </div>
   );

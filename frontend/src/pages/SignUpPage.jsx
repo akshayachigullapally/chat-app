@@ -147,6 +147,7 @@ const SignUpPage = () => {
       <AuthImagePattern
         title="Join our community"
         subtitle="Connect with friends, share moments, and stay in touch with your loved ones."
+        imageSrc="/undraw_online-test_cqv0.svg"
       />
     </div>
   );
